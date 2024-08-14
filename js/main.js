@@ -9,12 +9,8 @@ let speed = 12;
 let lastPaintTime = 0;
 let snakeArr = [
     {x: 13, y: 15}
-]
-food = [
-        {x: 6, y: 7},
-        {x: 3, y: 14},
-        {x: 3, y: 3}
-    ];
+];
+food = {x: 6, y: 7};
 
 // game function
 function main(ctime){

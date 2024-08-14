@@ -86,10 +86,10 @@ function gameEngine(){
         board.appendChild(snakeElement);
     });
 
-    food.forEach(f => {
+    food.forEach(fd => {
         let foodElement = document.createElement('div');
-        foodElement.style.gridRowStart = f.y;
-        foodElement.style.gridColumnStart = f.x;
+        foodElement.style.gridRowStart = fd.y;
+        foodElement.style.gridColumnStart = fd.x;
         foodElement.classList.add('food');
         board.appendChild(foodElement);
     });
@@ -129,5 +129,5 @@ window.addEventListener('keydown', e => {
             break;
         default:
             break;
-    }
+    };
 });
